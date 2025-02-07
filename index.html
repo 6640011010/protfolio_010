@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio - คงกระพันธ์ แกะพลอย</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .resume-container {
+            display: flex;
+            max-width: 900px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        .left-section {
+            background-color: #0f4c81;
+            color: white;
+            width: 30%;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .left-section img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid white;
+        }
+        .left-section h1 {
+            font-size: 22px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .contact-info, .skills-section {
+            margin-top: 20px;
+            text-align: left;
+            width: 100%;
+        }
+        .contact-info p, .skills-section p {
+            margin-bottom: 10px;
+        }
+        .right-section {
+            width: 70%;
+            padding: 30px;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0f4c81;
+            margin-bottom: 10px;
+        }
+        .section-content {
+            margin-bottom: 20px;
+        }
+        .info-block {
+            margin-bottom: 10px;
+        }
+        .info-block span {
+            display: inline-block;
+            min-width: 150px;
+            font-weight: 600;
+        }
+        .divider {
+            border-bottom: 1px solid #ddd;
+            margin: 15px 0;
+        }
+        .portfolio-section {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px 0;
+        }
+        .portfolio-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px;
+            width: 23%;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .card-subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .card-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .card-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="left-section">
+            <img src="images/pro.jpg" alt="Profile Picture">
+            <h1>นาย คงกระพันธ์ แกะพลอย</h1>
+            <p>อายุ: 20 ปี | สัญชาติ: ไทย</p>
+            <div class="contact-info">
+                <p><strong>โทร:</strong> 089-312-1083</p>
+                <p><strong>Email:</strong> naxart@gmail.com</p>
+                <p><strong>ที่อยู่:</strong> 31 หมู่ 6 ตำบลมะขามเตี้ย อำเภอเมืองสุราษฎร์ธานี จังหวัดสุราษฎร์ธานี 84000</p>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="section-content">
+                <h2 class="section-title">การศึกษา</h2>
+                <div class="info-block">
+                    <span>ประถมศึกษา:</span> โรงเรียน ฝวาหมินกงลิ (2555-2560) - เกรดเฉลี่ย: 2.75
+                </div>
+                <div class="info-block">
+                    <span>มัธยมศึกษาตอนต้น:</span> โรงเรียน พุทธยาคมศรียาภัย (2560-2563) - เกรดเฉลี่ย: 2.35
+                </div>
+                <div class="info-block">
+                    <span>มัธยมศึกษาตอนปลาย:</span> โรงเรียน ศรียาภัย ๒ (2563-2566) - เกรดเฉลี่ย: 3.04
+                </div>
+                <div class="info-block">
+                    <span>ปริญญาตรี:</span> มหาวิทยาลัยสงขลานครินทร์ (2566) - เกรดเฉลี่ย: 2.99
+                </div>
+            </div>
+
+            <div class="section-content">
+                <h2 class="section-title">ประสบกรณ์ทำงาน</h2>
+                <div class="info-block">
+                    <span>สถานที่:</span> 7-Eleven สาขา สมัยคงคา เกาะพงัน (บริการลูกค้า)
+                </div>
+                <div class="info-block">
+                    <span>ระยะเวลา:</span> 11 มีนาคม 2567 - 1 มิถุนายน 2567
+                </div>
+            </div>
+
+            <div class="section-content">
+                <h2 class="section-title">ทักษะ</h2>
+                <p>Microsoft Office, Excel, PowerPoint</p>
+            </div>
+
+            <div class="section-content">
+                <h2 class="section-title">กิจกรรมที่เข้าร่วม</h2>
+                <p>เข้าร่วมอบรมด้าน Network การบำรุงรักษาระบบดิจิทัล</p>
+                <p>กิจกรรมจิตอาสาและพัฒนาชุมชน</p>
+            </div>
+
+            <div class="section-content">
+                <h2 class="section-title">อาจารย์ที่ปรึกษา</h2>
+                <p>ผู้ช่วยศาสตราจารย์ จริยา เสกสันต์ | อีเมล: jariya.se@psu.ac.th</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-section">
+        <h2 class="portfolio-title">Portfolio</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="images/th.jpg" alt="Menu 1">
+                <p class="card-title">ข้าวไขเจียว</p>
+                <button onclick="window.location.href='menu.html'">Go to menu</button>
+            </div>
+            <div class="card">
+                <img src="https://www.jobtopgun.com/article/wp-content/uploads/2023/01/resume1-1024x857.jpg" alt="Form">
+                <p class="card-title">ฟอร์มศิษย์เก่า</p>
+                <button onclick="window.location.href='form.html'">Go to form</button>
+            </div>
+            <div class="card">
+                <img src="images/ggg.jpg" alt="Music Store">
+                <p class="card-title">ร้านขายเครื่องดนตรี</p>
+                <button onclick="window.location.href='musicstore.html'">Go to musicstore</button>
+            </div>
+            <div class="card">
+                <img src="images/fesh.jpg" alt="Beautiful Food Menu">
+                <p class="card-title">เมนูอาหารสวยงาม</p>
+                <button onclick="window.location.href='Beautifulfoodmenu.html'">Go to Beautifulfoodmenu</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
